@@ -3,8 +3,10 @@ from django.db.models import CharField
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
+from eycars.utils.models import BaseModel
 
-class User(AbstractUser):
+
+class User(AbstractUser, BaseModel):
     """Default user for eycars."""
 
     #: First and last name do not cover name patterns around the globe
