@@ -9,10 +9,7 @@ from eycars.utils.models import BaseModel
 class User(AbstractUser, BaseModel):
     """Default user for eycars."""
 
-    #: First and last name do not cover name patterns around the globe
     name = CharField(_("Name of User"), blank=True, max_length=255)
-    first_name = None  # type: ignore
-    last_name = None  # type: ignore
 
     def get_absolute_url(self):
         """Get url for user's detail view.
