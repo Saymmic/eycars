@@ -3,7 +3,7 @@ from django.db.models import CharField
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-from eycars.utils.models import BaseModel
+from utils.models import BaseModel
 
 
 class User(AbstractUser, BaseModel):

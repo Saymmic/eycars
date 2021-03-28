@@ -16,4 +16,6 @@ class UUIDPrimaryKeyModel(models.Model):
 
 
 class BaseModel(UUIDPrimaryKeyModel, TimeStampedModel):
-    pass
+
+    class Meta(UUIDPrimaryKeyModel.Meta, TimeStampedModel.Meta):
+        abstract = True
