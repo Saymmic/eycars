@@ -3,7 +3,7 @@ from typing import Any
 from dataclasses import dataclass
 
 
-@dataclass
+@dataclass(frozen=True)
 class BaseResponse:
     Count: int
     Message: str
@@ -11,7 +11,7 @@ class BaseResponse:
     Results: list[Any]
 
 
-@dataclass
+@dataclass(frozen=True)
 class CarModel:
     Make_ID: int
     Make_Name: str
@@ -19,6 +19,6 @@ class CarModel:
     Model_Name: str
 
 
-@dataclass
+@dataclass(frozen=True)
 class ModelsForMakeResponse(BaseResponse):
     Results: list[CarModel]
