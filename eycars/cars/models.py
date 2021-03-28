@@ -1,6 +1,6 @@
 from django.db import models
 
-from utils.models import BaseModel
+from eycars.utils.models import BaseModel
 
 
 class Car(BaseModel):

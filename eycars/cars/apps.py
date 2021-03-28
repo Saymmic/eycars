@@ -2,7 +2,7 @@ from django.apps import AppConfig
 
 
 class CarsConfig(AppConfig):
-    name = 'cars'
+    name = "eycars.cars"
 
     def ready(self):
         try:
